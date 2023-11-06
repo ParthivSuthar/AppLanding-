@@ -1,0 +1,445 @@
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-heading-color: #ffffff;
+    --primary-heading-color: #4e97cc;
+    --pricing-plan-color: #333333;
+    --small-bold-text-color: #222222;
+    --icon-hover-color: #F06060;
+    --padding-inline-section: 20px;
+}
+
+html,body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.18rem;
+    font-family: sans-serif;
+}
+
+
+/* Utility */
+
+.container {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Navbar */
+
+nav {
+    width: 100vw;
+    height: 70px;
+    background-color: whitesmoke;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    gap: 30px;
+}
+
+
+
+/* Hero Section */
+
+.hero-section {
+    background-image: url(/img/super.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-container {
+    gap: 10px;
+    position: relative;
+}
+
+.hero-container img {
+    padding-top: 20px;
+}
+
+.hero-container .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hero-image .iphoneshots {
+    width: 204px;
+    position: absolute;
+    top: 13%;
+    right: 66%;
+    bottom: 55%;
+}
+
+.hero-content {
+    padding-bottom: 70px;
+}
+
+.hero-content > h1+h2{
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+}
+
+.hero-content h2 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(47, 30, 199);
+}
+
+.app-button img {
+    background-color: red;
+    border-radius: 30px;
+    padding: 2px;
+}
+
+.app-button img:hover {
+    background-color: black;
+}
+
+
+/* Feature */
+
+.features {
+    padding-top: 30px;
+    flex-direction: column;
+}
+
+.feature-header h2 {
+    color: var(--primary-heading-color);
+}
+
+.feature-container {
+    margin-top: 50px;
+    width: 100%;
+    padding-inline: 50px;
+}
+
+.feature-area {
+    width: 100%;
+}
+
+.feature-card {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    background-color: rgb(229, 235, 236);
+    padding: 8px 12px;
+    box-shadow: 1px 2px 2px 1px;
+    width: 90%;
+    position: relative;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+
+.feature-card:hover{
+    transform: scale(1.2);
+}
+
+
+/* Product */
+
+.product {
+    margin-top: 120px;
+}
+
+.product-container {
+    flex-direction: column;
+}
+
+.product-header {
+    text-align: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.product-header h2 {
+    color: var(--primary-heading-color);
+}
+
+.product-header p {
+    font-size: 1.1rem;
+}
+
+.product-features {
+    padding-top: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.two-product-feature {
+    width: 30%;
+}
+
+.two-product-feature:nth-child(3) {
+    margin-left: 40px;
+    width: 30%;
+}
+
+.p1 {
+    flex-direction: column;
+    gap: 55px;
+}
+
+.p1-card {
+    max-width: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    
+}
+
+.p1-card h3 {
+    color: var(--primary-heading-color);
+}
+
+
+
+/* Instant Preview */
+
+.instant-preview {
+    margin-top: 120px;
+}
+
+.instant-title {
+    text-align: center;
+}
+
+.instant-title h2 {
+    color: var(--primary-heading-color);
+}
+
+.instant-title p {
+    padding-top: 20px;
+    text-wrap: balance;
+}
+
+
+.instant-preview-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 220px;
+    gap: 16px;
+    margin-top: 50px;
+    
+}
+
+.instant-preview-gallery .box {
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    border: 2px solid;
+    box-shadow: 1px 1px 5px red;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+
+.instant-preview-gallery .box:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* Pricing */
+
+.Pricing {
+    margin-top: 160px;
+}
+
+.pricing-container h2 {
+    text-align: center;
+    color: var(--primary-heading-color);
+}
+
+.pricing-area {
+    padding-top: 80px;
+    justify-content: space-around;
+}
+
+.pricing-card {
+    flex-direction: column;
+    gap: 20px;
+    background-color: yellow;
+    padding: 20px 30px;
+    width: 250px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 1px;
+    transition: 0.3s ease-in;
+}
+
+.pricing-card:hover{
+    transform: skew(20deg);
+}
+
+.active {
+    background-color: rgb(188, 206, 215);
+    color: rgb(38, 54, 56);
+}
+
+.highlight {
+    background-color: wheat;
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+}
+
+.buy-now {
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 2px;
+    border-radius: 15px;
+}
+
+.buy-now:hover{
+    background-color: red;
+    color: rgb(234, 230, 224);
+}
+
+
+/* Contact Us */
+
+.contact-us {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.contact-container p {
+    padding-top: 20px;
+}
+
+.form-container {
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    text-align: center;
+    transform: translate(22%);
+}
+
+label {
+    display: block;
+}
+
+input {
+    display: block;
+    width: 50%;
+    padding: 10px;
+}
+
+textarea {
+    padding: 10px;
+}
+
+.email-now {
+    background-color: rgb(85, 176, 232);
+    width: 50%;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.email-now:hover {
+    color: black;
+}
+
+
+
+/* Footer */
+
+footer {
+    margin-top: 120px;
+    background-color: #222222;
+    width: 100%;
+}
+
+.footer-content {
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.footer-content h4 {
+    color: whitesmoke;
+}
+
+.social-media {
+    align-items: center;
+    color: white;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.social-media .icon {
+    background-color: wheat;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.social-media .icon:hover {
+    background-color: rgb(55, 194, 233);
+    color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
